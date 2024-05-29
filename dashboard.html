@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Replica</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="sidebar" class="sidebar">
+        <div style="cursor: pointer;" class="sidebar-header" onclick="toggleSidebar()">
+            <img src="./assets/images/RFIDpk-72-Res-Logo-32x32.png" alt="">
+            <a href="javascript:void(0)" class="closebtn"><i class="fas fa-chevron-left"></i></a>
+        </div>
+        <div class="sidebar-content">
+            <ul class="nav flex-column">
+
+                <li class="nav-item"><a href="./dashboard.html" class="nav-link active" data-toggle="tooltip"
+                        data-placement="right" title="RFID Livestock Farm"><i class="fas fa-chart-bar"></i> <span>RFID
+                            Livestock
+                            Farm</span></a></li>
+                <li class="nav-item"><a href="./manageFarm.html" class="nav-link" data-toggle="tooltip"
+                        data-placement="right" title="Manage Farm"><i class="fas fa-clipboard "></i> <span>Manage
+                            Farm</span></a></li>
+                <li class="nav-item"><a href="./calender.html" class="nav-link" data-toggle="tooltip"
+                        data-placement="right" title="Calendar"><i class="fas fa-calendar-alt"></i>
+                        <span>Calendar</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tooltip" data-placement="right"
+                        title="Paddocks"><i class="fas fa-bars"></i> <span>Paddocks</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tooltip" data-placement="right"
+                        title="Livestock"><i class="fas fa-paw"></i> <span>Livestock</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tooltip" data-placement="right"
+                        title="Movements"><i class="fas fa-truck"></i> <span>Movements</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tooltip" data-placement="right"
+                        title="Inventory"><i class="fas fa-warehouse"></i> <span>Inventory</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tooltip" data-placement="right"
+                        title="Tasks"><i class="fas fa-tasks"></i> <span>Tasks</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tooltip" data-placement="right"
+                        title="Reports"><i class="fas fa-file-alt"></i> <span>Reports</span></a></li>
+
+
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tooltip" data-placement="right"
+                        title="Setup guide"><i class="fas fa-cog"></i> <span>Setup guide</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tooltip" data-placement="right"
+                        title="Account"><i class="fas fa-user"></i> <span>Account</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tooltip" data-placement="right"
+                        title="Get help"><i class="fas fa-question-circle"></i> <span>Get help</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Header -->
+    <div id="header" class="header w-100 py-3 border-bottom  ">
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Biosecurity</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="main">
+
+        <div class="container-fluid">
+            <div class="row mt-4">
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">4</h5>
+                            <p class="card-text">No of Paddocks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">1200</h5>
+                            <p class="card-text">Total Livestocks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">70</h5>
+                            <p class="card-text">Age upto 6 months</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">100</h5>
+                            <p class="card-text">Age upto 1 Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">200</h5>
+                            <p class="card-text">Age upto 2 Years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">80</h5>
+                            <p class="card-text">Age upto 3+ Years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">60</h5>
+                            <p class="card-text">Weight Upto 50kg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">80</h5>
+                            <p class="card-text">Weight Upto 100kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">90</h5>
+                            <p class="card-text">Weight Upto 150kg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">20</h5>
+                            <p class="card-text">Weight Upto 200kg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">300</h5>
+                            <p class="card-text">Weight Upto 300kg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">150</h5>
+                            <p class="card-text">Weight Upto 400kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">900</h5>
+                            <p class="card-text">Vaccinated</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">300</h5>
+                            <p class="card-text">Not Vaccinated</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">12</h5>
+                            <p class="card-text">Deaths in last 6 months</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">400</h5>
+                            <p class="card-text">Sold during the month</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-3 mb-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">300</h5>
+                            <p class="card-text">Purchase during the month</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /// add some graph   /// -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card bg-transparent shadow-none border-0 ">
+                        <div class="card-body text-left">
+                            <p>overview</p>
+                            <img src="./assets/images/chart img.png" class="img-fluid" alt="">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h4>Individual Animals</h4>
+
+                </div>
+
+            </div>
+            <div class="row border py-5">
+                <div class="col-md-6">
+                    <div class="card bg-transparent shadow-none border-0 ">
+                        <div class="card-body text-left">
+                            <p>Start adding your animals</p>
+                            <p>Once you have added some animals we will be able to show you a summary of them here.
+                            </p>
+                            <button style="font-size: 14px;" class="btn bg-white border ">Import CSV</button>
+                            <a class="px-2">Record a live session</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./assets/images/no-enterprises.svg" alt="">
+                </div>
+            </div>
+
+            <div class="row mt-4 records-sec">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h4>Upcoming Tasks</h4>
+                        <a href="#">View All Tasks</a>
+                    </div>
+                    <div class="card mt-3 border-0">
+                        <div class="card-body p-0">
+                            <div class="table-responsive" style="max-height: 300px; overflow-y: auto;">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <span class="py-1 px-1 bg-warning text-white rounded-circle"><i
+                                                        style="font-size: 17px;" class="fas fa-star "></i></span>
+                                            </th>
+                                            <th>Title</th>
+                                            <th>Due Date</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="py-1 px-1 bg-warning text-white rounded-circle"><i
+                                                        style="font-size: 17px;" class="fas fa-star "></i></span>
+                                            </td>
+                                            <td>Understand your animal inventory</td>
+                                            <td>-</td>
+                                            <td>
+                                                <i style="font-size: 24px;"
+                                                    class="fas fa-check-circle text-success"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="py-1 px-1 bg-warning text-white rounded-circle"><i
+                                                        style="font-size: 17px;" class="fas fa-star "></i></span>
+                                            </td>
+                                            <td>Set up an enterprise</td>
+                                            <td>-</td>
+                                            <td>
+                                                <i style="font-size: 24px;"
+                                                    class="fas fa-check-circle text-success"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="py-1 px-1 bg-warning text-white rounded-circle"><i
+                                                        style="font-size: 17px;" class="fas fa-star "></i></span>
+                                            </td>
+                                            <td>Enter your individual animals</td>
+                                            <td>-</td>
+                                            <td>
+                                                <i style="font-size: 24px;"
+                                                    class="fas fa-check-circle text-success"></i>
+                                            </td>
+                                        </tr>
+                                        <!-- Add more rows for upcoming tasks here if needed -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center justify-content-between ">
+                        <h4>Rainfall</h4>
+                        <a href="#">View rainfall records</a>
+                    </div>
+                    <div class="card rounded-0 p-3 mt-3">
+                        <img src="./assets/images/record.png" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
